@@ -1,1 +1,1 @@
-var a={};var r=[];
+"use strict";var abcde={};var eeeeeeee=[];

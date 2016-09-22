@@ -16,6 +16,7 @@ var gulp = require('gulp'),
     rev = require('gulp-rev'), // 更改版本名
     replace = require('gulp-replace'), // 字符替换
     revCollector = require('gulp-rev-collector'), // 更新静态资源引用路径
+    babel = require('gulp-babel'), // 转换es6代码为es5
     concat = require('gulp-concat'); // 文件合并
 
 //通配符
@@ -95,6 +96,7 @@ gulp.task('js', ['lib'], function () {
     gulp.src([src.js,
         "!" + src.root + "js/lib/bootstrap.min.js",
         "!" + src.root + "js/lib/jquery-1.12.2.min.js"])
+        .pipe(babel({presets: ['es2015']}))
         .pipe(uglify(uglify_config))
         .pipe(gulp.dest(build.js));
     console.log("脚本构建完毕");

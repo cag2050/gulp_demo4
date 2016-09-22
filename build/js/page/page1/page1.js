@@ -1,1 +1,1 @@
-var a={};var r=[];
+"use strict";var page1={};var page11=[];
