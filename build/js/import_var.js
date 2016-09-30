@@ -1,0 +1,1 @@
+"use strict";var e=require("./export_var.js");console.log("name = "+e.name);console.log("age = "+e.age);

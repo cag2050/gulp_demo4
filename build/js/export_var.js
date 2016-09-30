@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:true});var e="Jeff";var r=30;exports.name=e;exports.age=r;
