@@ -208,8 +208,11 @@ gulp.task('clean', function () {
 gulp.task('watch', function () {
     gulp.watch([src.css, src.sass, src.html, src.js], function (e) {
         var src_path = e.path,
-            build_path = src_path.replace(/\\src\\/g, "/build/"),
+            build_path = src_path.replace(/\\src\\/g, "\\build\\"),
             _build_path = build_path.substr(0, build_path.lastIndexOf("\\"));
+        console.log(src_path);
+        console.log(build_path);
+        console.log(_build_path);
         //console.log(src_path.indexOf("\\page\\"));
         console.log('文件：' + src_path + "被修改");
         if (src_path.indexOf(".scss") > -1) {

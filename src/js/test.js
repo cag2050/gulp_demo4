@@ -17,7 +17,7 @@ function sfsfsfsfsf() {
 
 var sfsfsff = {};
 
-let let1 = {};
+let let1 = 333;
 
 
 
